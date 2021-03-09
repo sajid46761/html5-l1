@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> BCCI</title>
+    
+
+</head>
+<body style="margin-left:50px;margin-top:50px;">
+
+ <header>
+           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/Cricket_India_Crest.svg/1200px-Cricket_India_Crest.svg.png" height="50pxpx" width="100px" style ="float:left"/><h1>Board of Control for Cricket in India</h1>
+        </header>
+
+
+
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	axisX:{
+		title: "Number of overs"
+	},
+	axisY: {
+		title: "Runs Scored"
+	
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 0},
+			{y: 10},{y: 20},{y: 30},{y: 35},{y: 40},
+   			{ y: 45},
+			{y: 55},{y:60},{y: 70},{y: 75},
+			{ y: 80},
+			{y: 100},{y: 110},{y: 120},{y: 140}
+
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<div id="chartContainer" style="height: 300px; width: 50%;"></div>
+</body>
+</html>
